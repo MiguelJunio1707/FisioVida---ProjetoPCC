@@ -5,13 +5,12 @@ USE fisiovida;
 -- Tabela USUARIO
 CREATE TABLE usuario (
     id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VACHAR(100),
     email VARCHAR(50),
     senha VARCHAR(100),
-    tipo_usuario ENUM('Paciente', 'Fisioterapeuta', 'Administrador'),
     data_nasc DATE,
     telefone VARCHAR(20),
     endereco VARCHAR(200),
-    paciente_id_paciente INT
 );
 
 -- Tabela PERFIL
